@@ -1,0 +1,44 @@
+@font-face{
+    font-family:"Mahamaya";
+    src:url("Mahamaya.otf") format("opentype");
+}
+@font-face{
+    font-family:"Posteratus-Rex-FFP";
+    src:url("Posteratus-Rex-FFP.otf") format("opentype");
+}
+
+body{
+    background: -moz-linear-gradient(bottom, #C0E8D6, #33F5B1 );
+}
+h1{
+    text-align: center;
+    color: #FF426D;
+    font-size: 600%;
+    font-family: Mahamaya;
+    text-decoration: underline;
+}
+nav{
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-justify-content: center;
+    justify-content: center;
+    
+    font-size: 500%;
+    text-align: center;
+}
+nav ul{
+}
+nav ul li{
+    list-style: none;
+    margin: 10px;
+    padding:110px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    background: #3CB6A9;
+    border: solid black 5px;
+    font-family: Posteratus-Rex-FFP;
+}
+nav ul li:hover{
+  background-color: #C3FFE1;
+}
