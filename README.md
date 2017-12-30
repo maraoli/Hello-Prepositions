@@ -5,7 +5,7 @@
      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
     ----------------------------------------------------------------- 
 
-Acesse esse site em : https://merymay.github.io/Hello-Prepositions
+Acesse esse site em : https://morymay.github.io/Hello-Prepositions
 
 OBS: No Moz funciona melhor (viva o SW livre kkk).
 
