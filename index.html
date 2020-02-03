@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type = "text/css" href="style.css"/>
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type = "text/css" href="./view/home/style.css"/>
 </head>
 <body>
     <h1>Hello Prepositions</h1>
     <nav>
         <div id="esquerda">
         <ul>
-            <a href="www.google.com.br"><li class="direita">How Start?</li></a>
-            <li>Subject</li>
+            <a href="./view/how-to-play/index.html " ><li onclick="comoJogar()" class="direita">How to Play?</li></a>
+            <a href="./view/subject/index.html" ><li onclick="comoJogar()" >Subject</li></a>
         </ul>
         </div>
         <div id="direita">
         <ul>
-            <li>Game</li>
-            <li>About me :)</li>
+            <a href="./view/new-game/index.html" ><li onclick="comoJogar()">New Game</li></a>
+            <a href="./view/about/index.html" ><li onclick="comoJogar()">About me :)</li></a>
         </ul>
         </div>
     </nav>
-      
+    <script src="./view/home/script.js"></script>
 </body>
 </html>

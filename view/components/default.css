@@ -1,0 +1,12 @@
+@font-face{
+    font-family:"Mahamaya";
+    src:url("../../fonts/Mahamaya.otf") format("opentype");
+}
+@font-face{
+    font-family:"Posteratus-Rex-FFP";
+    src:url("../../fonts/Posteratus-Rex-FFP.otf") format("opentype");
+}
+body{
+    background: -moz-linear-gradient(bottom, #C0E8D6, #33F5B1 );
+    background-image: url("./letras-roxo.jpg");
+}
