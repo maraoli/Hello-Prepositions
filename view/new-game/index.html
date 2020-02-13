@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type = "text/css" href="../components/default.css"/>
+    <link rel="stylesheet" type = "text/css" href="../components/grids.css"/>
     <link rel="stylesheet" type = "text/css" href="style.css"/>
     <title>Hello Prepositions</title>
 </head>
 <body>
-    <form id="questoes" class="questoes"></form>
-    
+    <div class="main">
+        <nav class="menu row">
+            <h1 class="col-3">Hello Prepositions</h1>
+            <ul class="col-9">
+                <li class="col-3">Questão: <spam id="contQuestao">1</spam>/5</li>
+                <li class="col-4">Tempo restante: <spam id="timer"> 0</spam> segundos</li>
+            </ul>
+        </nav>
+        <div class="container">
+            <form id="questoes" class="questoes"></form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

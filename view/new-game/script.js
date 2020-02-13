@@ -5,13 +5,13 @@ var qdtQuestoesExistentes;
 var qdtQuestoesParaRodada = 5;
 
 var questoes = [
-    ["Questão1","resp1","resp2",1],
-    ["Questão2","resp1","resp2",2],
-    ["Questão3","resp1","resp2",2],
-    ["Questão4","resp1","resp2",1],
-    ["Questão5","resp1","resp2",2],
-    ["Questão6","resp1","resp2",1],
-    ["Questão7","resp1","resp2",1]
+    ["Our parents protected us ____ the danger.","from","of",1],
+    ["I learned _____ the horses.","by","about",2],
+    ["Was she invited _____ the party?","of","to",2],
+    ["She impressed it _____ silk screen.","on","at",1],
+    ["This Avenue was named _____ my grandmother.","from","after",1],
+    ["They are going to meet me _____ Saturday","on","in",1],
+    ["Julia went to Paris _____ September.","on","in",2]
 ]
 
 qdtQuestoesExistentes = questoes.length;
@@ -49,7 +49,8 @@ var intRodada = 0;
 function salvaRodada(intRodada, intResp){
   console.log("aqui 0");
   respRodada.push(intResp);
-  intRodada++
+  intRodada++;
+  clearTimeout(settimer);
   atualizaRodada(intRodada);
 }
 
@@ -60,10 +61,17 @@ function reenderizaQuestao(num,intRodada){
   var resposta2 = questoes[num][2];
 
   questao = "<p>"+ pergunta +"</p>"
-  + '<buttom onclick="salvaRodada('+intRodada+',1)">'+ resposta1 +"</buttom>"
-  + '<buttom onclick="salvaRodada('+intRodada+',2)">'+ resposta2 +"</buttom>";
+  + '<buttom class="botao" onclick="salvaRodada('+intRodada+',1)">'+ resposta1 +"</buttom>"
+  + '<buttom class="botao" onclick="salvaRodada('+intRodada+',2)">'+ resposta2 +"</buttom>";
 
+  counter = 10;
+
+  document.getElementById("contQuestao").innerHTML = intRodada+1;
+  
   document.getElementById("questoes").innerHTML = questao;
+
+  myTimer(intRodada);
+ 
 }
 
 function atualizaRodada(intRodada){
@@ -80,4 +88,19 @@ atualizaRodada(intRodada);
 
 for(var i = 0; i < respRodada.length ;i++){
   console.log(respRodada[i]);
+}
+
+var counter = 10;
+var settimer;
+function myTimer(intRodada) {
+    settimer = setTimeout( function() {
+    document.getElementById("timer").innerHTML = counter--;
+    console.log( counter );
+    if( counter >= 0 ) {
+      myTimer(intRodada);
+    }
+    else{
+      salvaRodada(intRodada, 0);
+    }
+  }, 1000 );
 }

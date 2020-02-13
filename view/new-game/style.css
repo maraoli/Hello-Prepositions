@@ -1,7 +1,23 @@
 body{
-    margin: auto 0;
     text-align: center;
 }
 .questoes{
-    font-size: 48px;
+    font-size: 30px;
+    padding: calc(50% - 150px) 0px;
+    margin: auto;
+    width: 600px;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.botao{
+    width: 300px;
+    margin: 10px auto;
+    display: block;
+    background: #3CB6A9;
+    border: 3px solid rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    padding: 20px;
+}
+.botao:hover{
+    background-color: #C3FFE1;
 }
