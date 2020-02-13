@@ -81,6 +81,7 @@ function atualizaRodada(intRodada){
     reenderizaQuestao(num,intRodada);
   }else{
     alert("Fim de jogo");
+    alert("Você acertou "+ verificarResp()+ " questões.");
   }
 }
 
@@ -101,6 +102,20 @@ function myTimer(intRodada) {
     }
     else{
       salvaRodada(intRodada, 0);
+      alert("O tempo esgotou.");
     }
   }, 1000 );
 }
+
+function verificarResp(){
+  var pontos = 0;
+
+  for(var i = 0; i< respRodada.length; i++){
+    var num = rodada[i];
+    if(respRodada[i] == questoes[num][3]){
+      pontos++;
+    }
+  }
+  return pontos;
+}
+
